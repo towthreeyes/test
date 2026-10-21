@@ -328,8 +328,6 @@ python scripts/svg_to_png.py outputs/figures/fig1_delay_curve.svg outputs/figure
 .
 ├── README.md                     # 本文件：判断 / 动作 / 证明
 ├── AI_LOG.md                     # AI 交互记录：提示词、AI 哪里不对、怎么改的
-├── ANALYSIS.md                   # 推导过程：每步做了什么、为什么、结果
-├── QNA.md                        # 答辩准备：数据怎么处理、为什么这么处理
 ├── requirements.txt
 ├── data/
 │   └── assembly_dispatches.csv   # 原始数据（只读，不做任何手工修改）
