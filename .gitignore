@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.packages/
+.python-version
+
+# local scratch
+.tmp/
+*.log
+
+# leftovers the sandbox could not delete (permission-locked); not part of the project
+test.txt
+
+# generated previews (SVGs are the committed charts; PNGs are only for eyeballing)
+outputs/figures/*.png
+outputs/digest.txt
+outputs/tests.txt
+
+# OS
+.DS_Store
+Thumbs.db

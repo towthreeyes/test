@@ -1,0 +1,631 @@
+{
+  "data": {
+    "raw": {
+      "rows": 1277,
+      "bad_timestamps": 0,
+      "missing_assembled": 49,
+      "non_binary_assembled": 0,
+      "negative_delay": 0,
+      "duplicate_ids": 61,
+      "duplicate_rows": 61,
+      "extra_workshops": [],
+      "extra_categories": [],
+      "delay_mean": 19.379478827361563,
+      "delay_p50": 13.0,
+      "delay_p95": 62.0,
+      "delay_max": 70.0
+    },
+    "clean": {
+      "raw_rows": 1277,
+      "duplicate_rows_removed": 61,
+      "missing_outcome_rows": 49,
+      "clean_rows": 1169,
+      "clean_stoppages": 141,
+      "clean_assembled": 1028,
+      "clean_missing_rate": 0.12061591103507271,
+      "raw_missing_rate_incl_missing_as_denominator": 0.11746280344557557,
+      "raw_missing_rate_valid_denominator": 0.12214983713355049,
+      "delay_mean": 19.315654405474763,
+      "delay_p50": 13.0,
+      "delay_p95": 62.0,
+      "delay_max": 70.0
+    }
+  },
+  "headline": {
+    "threshold": 19.0,
+    "intercepted": 323,
+    "true_hits": 110,
+    "false_alarms": 213,
+    "hit_rate": 0.34055727554179566,
+    "hit_rate_ci": [
+      0.2910198802073594,
+      0.39384275661732865
+    ],
+    "recall": 0.7801418439716312,
+    "net_savings_min": 4374.0,
+    "baseline_min": 10575.0,
+    "savings_vs_baseline": 0.4136170212765957,
+    "breakeven_hit_rate": 0.16,
+    "plateau_min": 19.0,
+    "plateau_max": 22.0,
+    "baseline_cost_min": 75.0,
+    "intercept_cost_min": 12.0
+  },
+  "chosen_threshold": {
+    "threshold": 19.0,
+    "intercepted": 323,
+    "true_hits": 110,
+    "false_alarms": 213,
+    "hit_rate": 0.34055727554179566,
+    "recall": 0.7801418439716312,
+    "net_savings_min": 4374.0,
+    "savings_vs_baseline": 0.4136170212765957
+  },
+  "tests": {
+    "T=18": {
+      "threshold": 18,
+      "n_high": 364,
+      "stoppages_high": 111,
+      "rate_high": 0.30494505494505497,
+      "ci_high": [
+        0.2598895308499147,
+        0.35407474072785144
+      ],
+      "n_low": 805,
+      "stoppages_low": 30,
+      "rate_low": 0.037267080745341616,
+      "ci_low": [
+        0.02622723095660686,
+        0.05270243833834532
+      ],
+      "rate_ratio": 8.182692307692308,
+      "odds_ratio": 11.33399209486166,
+      "chi2": 169.32645713309898,
+      "p_value": 1.0381895136334515e-38,
+      "cramers_v": 0.38058805645934685
+    },
+    "T=20": {
+      "threshold": 20,
+      "n_high": 323,
+      "stoppages_high": 110,
+      "rate_high": 0.34055727554179566,
+      "ci_high": [
+        0.2910198802073594,
+        0.39384275661732865
+      ],
+      "n_low": 846,
+      "stoppages_low": 31,
+      "rate_low": 0.03664302600472813,
+      "ci_low": [
+        0.025932976187503377,
+        0.0515421674157281
+      ],
+      "rate_ratio": 9.293917906721262,
+      "odds_ratio": 13.57716189610783,
+      "chi2": 203.55290069849443,
+      "p_value": 3.5038270339388395e-46,
+      "cramers_v": 0.41728367276627204
+    }
+  },
+  "segments": {
+    "workshop": {
+      "table": [
+        {
+          "workshop": "三号精密组装车间",
+          "n": 290,
+          "stoppages": 44,
+          "missing_rate": 0.15172413793103448,
+          "ci_low": 0.11500549252429376,
+          "ci_high": 0.19754929890074613,
+          "stoppage_minutes": 3300.0,
+          "ci_width": 0.08254380637645237,
+          "sample_ok_for_threshold": true
+        },
+        {
+          "workshop": "四号重型动力车间",
+          "n": 292,
+          "stoppages": 41,
+          "missing_rate": 0.1404109589041096,
+          "ci_low": 0.10521711703615652,
+          "ci_high": 0.1849435635442622,
+          "stoppage_minutes": 3075.0,
+          "ci_width": 0.07972644650810568,
+          "sample_ok_for_threshold": true
+        },
+        {
+          "workshop": "二号电气总装车间",
+          "n": 282,
+          "stoppages": 35,
+          "missing_rate": 0.12411347517730496,
+          "ci_low": 0.09060968171573927,
+          "ci_high": 0.1677208062188371,
+          "stoppage_minutes": 2625.0,
+          "ci_width": 0.07711112450309782,
+          "sample_ok_for_threshold": true
+        },
+        {
+          "workshop": "一号冲压装配车间",
+          "n": 305,
+          "stoppages": 21,
+          "missing_rate": 0.06885245901639345,
+          "ci_low": 0.045471157415756615,
+          "ci_high": 0.1029596239297616,
+          "stoppage_minutes": 1575.0,
+          "ci_width": 0.057488466514004986,
+          "sample_ok_for_threshold": true
+        }
+      ],
+      "test": {
+        "by": "workshop",
+        "chi2": 11.461934681077986,
+        "p_value": 0.009592808915001682,
+        "dof": 3,
+        "cramers_v": 0.09901972343762963
+      }
+    },
+    "part_category": {
+      "table": [
+        {
+          "part_category": "传动伺服电机",
+          "n": 111,
+          "stoppages": 19,
+          "missing_rate": 0.17117117117117117,
+          "ci_low": 0.11240858853979098,
+          "ci_high": 0.2519332527442037,
+          "stoppage_minutes": 1425.0,
+          "ci_width": 0.13952466420441273,
+          "sample_ok_for_threshold": true
+        },
+        {
+          "part_category": "压力传感器",
+          "n": 128,
+          "stoppages": 20,
+          "missing_rate": 0.15625,
+          "ci_low": 0.10348275682804894,
+          "ci_high": 0.22904961535190035,
+          "stoppage_minutes": 1500.0,
+          "ci_width": 0.1255668585238514,
+          "sample_ok_for_threshold": true
+        },
+        {
+          "part_category": "减速齿轮箱",
+          "n": 120,
+          "stoppages": 18,
+          "missing_rate": 0.15,
+          "ci_low": 0.09703734033668816,
+          "ci_high": 0.22467684940246252,
+          "stoppage_minutes": 1350.0,
+          "ci_width": 0.12763950906577437,
+          "sample_ok_for_threshold": true
+        },
+        {
+          "part_category": "冷却风道套件",
+          "n": 116,
+          "stoppages": 16,
+          "missing_rate": 0.13793103448275862,
+          "ci_low": 0.08671766101537676,
+          "ci_high": 0.21235711769251764,
+          "stoppage_minutes": 1200.0,
+          "ci_width": 0.12563945667714088,
+          "sample_ok_for_threshold": true
+        },
+        {
+          "part_category": "微控制器模块",
+          "n": 107,
+          "stoppages": 13,
+          "missing_rate": 0.12149532710280374,
+          "ci_low": 0.07239365431718056,
+          "ci_high": 0.19683378375661123,
+          "stoppage_minutes": 975.0,
+          "ci_width": 0.12444012943943067,
+          "sample_ok_for_threshold": true
+        },
+        {
+          "part_category": "液压制动阀",
+          "n": 121,
+          "stoppages": 14,
+          "missing_rate": 0.11570247933884298,
+          "ci_low": 0.07018454775284505,
+          "ci_high": 0.1848714592191899,
+          "stoppage_minutes": 1050.0,
+          "ci_width": 0.11468691146634485,
+          "sample_ok_for_threshold": true
+        },
+        {
+          "part_category": "紧固件连接包",
+          "n": 134,
+          "stoppages": 14,
+          "missing_rate": 0.1044776119402985,
+          "ci_low": 0.0632603659585081,
+          "ci_high": 0.167741015337124,
+          "stoppage_minutes": 1050.0,
+          "ci_width": 0.10448064937861588,
+          "sample_ok_for_threshold": true
+        },
+        {
+          "part_category": "钣金结构外壳",
+          "n": 97,
+          "stoppages": 9,
+          "missing_rate": 0.09278350515463918,
+          "ci_low": 0.04958265664341581,
+          "ci_high": 0.1670104953890787,
+          "stoppage_minutes": 675.0,
+          "ci_width": 0.11742783874566289,
+          "sample_ok_for_threshold": true
+        },
+        {
+          "part_category": "低压配电板",
+          "n": 116,
+          "stoppages": 10,
+          "missing_rate": 0.08620689655172414,
+          "ci_low": 0.04749884203823806,
+          "ci_high": 0.15144376219935554,
+          "stoppage_minutes": 750.0,
+          "ci_width": 0.10394492016111748,
+          "sample_ok_for_threshold": true
+        },
+        {
+          "part_category": "高压线束总成",
+          "n": 119,
+          "stoppages": 8,
+          "missing_rate": 0.06722689075630252,
+          "ci_low": 0.03445533736402665,
+          "ci_high": 0.12706649237443327,
+          "stoppage_minutes": 600.0,
+          "ci_width": 0.09261115501040662,
+          "sample_ok_for_threshold": true
+        }
+      ],
+      "test": {
+        "by": "part_category",
+        "chi2": 11.070301061260537,
+        "p_value": 0.27031978979232085,
+        "dof": 9,
+        "cramers_v": 0.09731335828999586
+      }
+    }
+  },
+  "workshop_opt": [
+    {
+      "workshop": "三号精密组装车间",
+      "n": 290,
+      "stoppages": 44,
+      "missing_rate": 0.15172413793103448,
+      "in_sample_best_threshold": 19.0,
+      "in_sample_best_net_min": 1614.0,
+      "global_threshold": 19.0,
+      "global_net_min": 1614.0,
+      "in_sample_gain_min": 0.0,
+      "local_rule_loses_money": false,
+      "at_global_intercepted": 78,
+      "at_global_hits": 34,
+      "at_global_hit_rate": 0.4358974358974359,
+      "baseline_min": 3300.0
+    },
+    {
+      "workshop": "四号重型动力车间",
+      "n": 292,
+      "stoppages": 41,
+      "missing_rate": 0.1404109589041096,
+      "in_sample_best_threshold": 19.0,
+      "in_sample_best_net_min": 1680.0,
+      "global_threshold": 19.0,
+      "global_net_min": 1680.0,
+      "in_sample_gain_min": 0.0,
+      "local_rule_loses_money": false,
+      "at_global_intercepted": 85,
+      "at_global_hits": 36,
+      "at_global_hit_rate": 0.4235294117647059,
+      "baseline_min": 3075.0
+    },
+    {
+      "workshop": "二号电气总装车间",
+      "n": 282,
+      "stoppages": 35,
+      "missing_rate": 0.12411347517730496,
+      "in_sample_best_threshold": 19.0,
+      "in_sample_best_net_min": 1596.0,
+      "global_threshold": 19.0,
+      "global_net_min": 1596.0,
+      "in_sample_gain_min": 0.0,
+      "local_rule_loses_money": false,
+      "at_global_intercepted": 67,
+      "at_global_hits": 32,
+      "at_global_hit_rate": 0.47761194029850745,
+      "baseline_min": 2625.0
+    },
+    {
+      "workshop": "一号冲压装配车间",
+      "n": 305,
+      "stoppages": 21,
+      "missing_rate": 0.06885245901639345,
+      "in_sample_best_threshold": 52.0,
+      "in_sample_best_net_min": -18.0,
+      "global_threshold": 19.0,
+      "global_net_min": -516.0,
+      "in_sample_gain_min": 498.0,
+      "local_rule_loses_money": true,
+      "at_global_intercepted": 93,
+      "at_global_hits": 8,
+      "at_global_hit_rate": 0.08602150537634409,
+      "baseline_min": 1575.0
+    }
+  ],
+  "workshop_split_half": [
+    {
+      "workshop": "一号冲压装配车间",
+      "n": 305,
+      "train_n": 152,
+      "test_n": 153,
+      "min_train_threshold": 52.0,
+      "min_train_net_min": 60.0,
+      "global_threshold": 19.0,
+      "test_local_net_min": -78.0,
+      "test_global_net_min": -300.0,
+      "test_delta_local_minus_global": 222.0,
+      "local_wins_out_of_sample": true
+    },
+    {
+      "workshop": "三号精密组装车间",
+      "n": 290,
+      "train_n": 145,
+      "test_n": 145,
+      "min_train_threshold": 29.0,
+      "min_train_net_min": 678.0,
+      "global_threshold": 19.0,
+      "test_local_net_min": 819.0,
+      "test_global_net_min": 960.0,
+      "test_delta_local_minus_global": -141.0,
+      "local_wins_out_of_sample": false
+    },
+    {
+      "workshop": "二号电气总装车间",
+      "n": 282,
+      "train_n": 141,
+      "test_n": 141,
+      "min_train_threshold": 19.0,
+      "min_train_net_min": 666.0,
+      "global_threshold": 19.0,
+      "test_local_net_min": 930.0,
+      "test_global_net_min": 930.0,
+      "test_delta_local_minus_global": 0.0,
+      "local_wins_out_of_sample": false
+    },
+    {
+      "workshop": "四号重型动力车间",
+      "n": 292,
+      "train_n": 146,
+      "test_n": 146,
+      "min_train_threshold": 19.0,
+      "min_train_net_min": 1035.0,
+      "global_threshold": 19.0,
+      "test_local_net_min": 645.0,
+      "test_global_net_min": 645.0,
+      "test_delta_local_minus_global": 0.0,
+      "local_wins_out_of_sample": false
+    }
+  ],
+  "predictors": [
+    {
+      "predictor": "delay_min",
+      "label": "ledger lag (min)",
+      "auc": 0.21270731572701934,
+      "auc_inverted": 0.7872926842729806,
+      "best_auc": 0.7872926842729806
+    },
+    {
+      "predictor": "recorded_stock",
+      "label": "recorded stock",
+      "auc": 0.5683451996578083,
+      "auc_inverted": 0.43165480034219167,
+      "best_auc": 0.5683451996578083
+    },
+    {
+      "predictor": "queue_length",
+      "label": "queue length",
+      "auc": 0.444038551756492,
+      "auc_inverted": 0.555961448243508,
+      "best_auc": 0.555961448243508
+    }
+  ],
+  "ablation": [
+    {
+      "rule": "ledger lag >= T",
+      "cut": 22.0,
+      "cut_direction": ">=",
+      "intercepted": 323,
+      "true_hits": 110,
+      "hit_rate": 0.34055727554179566,
+      "net_savings_min": 4374.0,
+      "savings_vs_baseline": 0.4136170212765957
+    },
+    {
+      "rule": "stock <= S",
+      "cut": 3.0,
+      "cut_direction": "<=",
+      "intercepted": 132,
+      "true_hits": 28,
+      "hit_rate": 0.21212121212121213,
+      "net_savings_min": 516.0,
+      "savings_vs_baseline": 0.04879432624113475
+    },
+    {
+      "rule": "queue >= Q",
+      "cut": 88.0,
+      "cut_direction": ">=",
+      "intercepted": 9,
+      "true_hits": 2,
+      "hit_rate": 0.2222222222222222,
+      "net_savings_min": 42.0,
+      "savings_vs_baseline": 0.003971631205673759
+    },
+    {
+      "rule": "lag >= T OR stock <= S",
+      "cut": NaN,
+      "cut_direction": "either",
+      "intercepted": 420,
+      "true_hits": 119,
+      "hit_rate": 0.2833333333333333,
+      "net_savings_min": 3885.0,
+      "savings_vs_baseline": 0.36737588652482267
+    }
+  ],
+  "holdout": {
+    "train_rows": 669,
+    "train_days": 4.0,
+    "test_rows": 500,
+    "test_days": 2.0,
+    "chosen_threshold": 19.0,
+    "train_net_savings_min": 2604.0,
+    "train_savings_vs_baseline": 0.434,
+    "test_intercepted": 140,
+    "test_true_hits": 46,
+    "test_hit_rate": 0.32857142857142857,
+    "test_precision_ci": [
+      0.2562544989688083,
+      0.41004509725370325
+    ],
+    "test_net_savings_min": 1770.0,
+    "test_baseline_min": 4575.0,
+    "test_savings_vs_baseline": 0.38688524590163936,
+    "test_recall": 0.7540983606557377
+  },
+  "curve": [
+    {
+      "delay_bucket": "0-5",
+      "n": 243,
+      "stoppages": 9,
+      "missing_rate": 0.037037037037037035,
+      "ci_low": 0.01960531419525786,
+      "ci_high": 0.06887896074057141
+    },
+    {
+      "delay_bucket": "5-10",
+      "n": 219,
+      "stoppages": 8,
+      "missing_rate": 0.0365296803652968,
+      "ci_low": 0.01862407328502234,
+      "ci_high": 0.07041495712940656
+    },
+    {
+      "delay_bucket": "10-15",
+      "n": 215,
+      "stoppages": 7,
+      "missing_rate": 0.03255813953488372,
+      "ci_low": 0.01585876417771752,
+      "ci_high": 0.0656686967803453
+    },
+    {
+      "delay_bucket": "15-20",
+      "n": 169,
+      "stoppages": 7,
+      "missing_rate": 0.04142011834319527,
+      "ci_low": 0.02020615182262136,
+      "ci_high": 0.08301899767842469
+    },
+    {
+      "delay_bucket": "20-30",
+      "n": 56,
+      "stoppages": 21,
+      "missing_rate": 0.375,
+      "ci_low": 0.26010029646692184,
+      "ci_high": 0.505948739655107
+    },
+    {
+      "delay_bucket": "30-45",
+      "n": 89,
+      "stoppages": 28,
+      "missing_rate": 0.3146067415730337,
+      "ci_low": 0.22750896837627055,
+      "ci_high": 0.41704692036325997
+    },
+    {
+      "delay_bucket": "45-60",
+      "n": 99,
+      "stoppages": 36,
+      "missing_rate": 0.36363636363636365,
+      "ci_low": 0.27561748409823283,
+      "ci_high": 0.4618428432401205
+    },
+    {
+      "delay_bucket": "60-71",
+      "n": 79,
+      "stoppages": 25,
+      "missing_rate": 0.31645569620253167,
+      "ci_low": 0.22445138397970427,
+      "ci_high": 0.42548294852956653
+    }
+  ],
+  "cost_sensitivity": [
+    {
+      "threshold": 19.0,
+      "intercept_cost_min": 6,
+      "intercepted": 323,
+      "true_hits": 110,
+      "hit_rate": 0.34055727554179566,
+      "net_savings_min": 6312.0,
+      "savings_vs_baseline": 0.5968794326241135,
+      "clears_costs": true
+    },
+    {
+      "threshold": 19.0,
+      "intercept_cost_min": 9,
+      "intercepted": 323,
+      "true_hits": 110,
+      "hit_rate": 0.34055727554179566,
+      "net_savings_min": 5343.0,
+      "savings_vs_baseline": 0.5052482269503547,
+      "clears_costs": true
+    },
+    {
+      "threshold": 19.0,
+      "intercept_cost_min": 12,
+      "intercepted": 323,
+      "true_hits": 110,
+      "hit_rate": 0.34055727554179566,
+      "net_savings_min": 4374.0,
+      "savings_vs_baseline": 0.4136170212765957,
+      "clears_costs": true
+    },
+    {
+      "threshold": 19.0,
+      "intercept_cost_min": 15,
+      "intercepted": 323,
+      "true_hits": 110,
+      "hit_rate": 0.34055727554179566,
+      "net_savings_min": 3405.0,
+      "savings_vs_baseline": 0.3219858156028369,
+      "clears_costs": true
+    },
+    {
+      "threshold": 19.0,
+      "intercept_cost_min": 18,
+      "intercepted": 323,
+      "true_hits": 110,
+      "hit_rate": 0.34055727554179566,
+      "net_savings_min": 2436.0,
+      "savings_vs_baseline": 0.23035460992907802,
+      "clears_costs": true
+    },
+    {
+      "threshold": 19.0,
+      "intercept_cost_min": 24,
+      "intercepted": 323,
+      "true_hits": 110,
+      "hit_rate": 0.34055727554179566,
+      "net_savings_min": 498.0,
+      "savings_vs_baseline": 0.04709219858156028,
+      "clears_costs": true
+    },
+    {
+      "threshold": 19.0,
+      "intercept_cost_min": 30,
+      "intercepted": 323,
+      "true_hits": 110,
+      "hit_rate": 0.34055727554179566,
+      "net_savings_min": -1440.0,
+      "savings_vs_baseline": -0.13617021276595745,
+      "clears_costs": false
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+﻿metric,value
+raw_rows,1277.0
+duplicate_rows_removed,61.0
+missing_outcome_rows,49.0
+clean_rows,1169.0
+stoppages,141.0
+missing_rate_user_denominator,0.11746280344557557
+missing_rate_valid_denominator,0.12214983713355049
+missing_rate_clean,0.12061591103507271
